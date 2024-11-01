@@ -1,0 +1,26 @@
+# Asynchronous Javascript
+
+### Callbacks
+
+```
+setTimeout(() => {
+    console.log("5 second wait");
+},5000);
+```
+
+```
+const callbackFunction = () => console.log("5 second wait");
+
+setTimeout(callbackFunction,5000);
+```
+
+Callbacks are often used in event handlers:
+
+```
+const btn;
+btn.addEventListener('click', () => {
+    alert('Button clicked!')
+})
+```
+
+The disadvantage of callback functions is that they can become deeply nested, creating what is known as 'callback hell'.
